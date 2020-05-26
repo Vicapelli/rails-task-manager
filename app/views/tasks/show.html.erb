@@ -1,0 +1,8 @@
+<h1><%= @task.title %></h1>
+
+<p>Details: <%= @task.details %></p>
+<p>Completed: <%= @task.completed ? "Yes!" : "Need to be done!" %></p>
+
+<%= link_to 'Edit this task', edit_task_path(@task.id) %>
+
+<%= link_to 'Delete this task', task_path(@task.id), method: :delete %>
